@@ -45,3 +45,6 @@ PS：
 
 - css在线参考手册：[http://css.doyoe.com/](http://css.doyoe.com/)
 - 个人Gulp Bak：[https://github.com/imruxin/gulp](https://github.com/imruxin/gulp)
+
+
+更多学习资料请查看：[https://github.com/imruxin/front-end-study-collect](https://github.com/imruxin/front-end-study-collect)
