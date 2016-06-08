@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素改变date类型input框的默认样式</title>
+    <style type="text/css">
+    ::-webkit-clear-button,
+    ::-webkit-inner-spin-button,
+    ::-webkit-calendar-picker-indicator {
+      display:none;
+    }
+    [type="date"]::-webkit-datetime-edit-text {
+      color: transparent;
+    }
+    [type="date"]::-webkit-datetime-edit-text::before {
+      content: '-';
+      position: absolute;
+    }
+    ::-webkit-datetime-edit-text,
+    ::-webkit-datetime-edit-year-field,
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-hour-field,
+    ::-webkit-datetime-edit-minute-field,
+    ::-webkit-datetime-edit-ampm-field {
+      background: none;
+    }
+
+
+    /* ::-webkit-clear-button,
+    ::-webkit-inner-spin-button,
+    ::-webkit-calendar-picker-indicator {
+    	display:none;
+    }
+    [type="date"]::-webkit-datetime-edit-text {
+    	color: transparent;
+    }
+    [type="date"]::-webkit-datetime-edit-text::before {
+    	content: '-';
+    	color: #545a6c;
+    	position: absolute;
+    }
+    ::-webkit-datetime-edit-text,
+    ::-webkit-datetime-edit-year-field,
+    ::-webkit-datetime-edit-month-field,
+    ::-webkit-datetime-edit-day-field,
+    ::-webkit-datetime-edit-hour-field,
+    ::-webkit-datetime-edit-minute-field,
+    ::-webkit-datetime-edit-ampm-field {
+    	background: none;
+    	color: #545a6c;
+    }
+
+    :valid::-webkit-datetime-edit {
+    	visibility: hidden;
+    } */
+
+    .wrap	 {
+    	width: 800px;
+    	margin: 50px auto;
+    }
+    .input {
+    	width: 300px;
+    	height: 50px;
+    	line-height: 50px;
+    	border: 1px solid #ccc;
+    	outline: 0;
+    	text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+	<div class="wrap">
+		<input class="input" type="date">
+		<div class="css">
+			<ul>
+				<li>::-webkit-datetime-edit – 控制编辑区域的</li>
+				<li>::-webkit-datetime-edit-fields-wrapper – 控制年月日这个区域的</li>
+				<li>::-webkit-datetime-edit-text – 这是控制年月日之间的斜线或短横线的</li>
+				<li>::-webkit-datetime-edit-month-field – 控制月份</li>
+				<li>::-webkit-datetime-edit-day-field – 控制具体日子</li>
+				<li>::-webkit-datetime-edit-year-field – 控制年文字, 如2013四个字母占据的那片地方</li>
+				<li>::-webkit-inner-spin-button – 这是控制上下小箭头的</li>
+				<li>::-webkit-calendar-picker-indicator – 这是控制下拉小箭头的</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+
+</html>

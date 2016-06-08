@@ -44,7 +44,6 @@ css本身是不具有逻辑性的，如果我们一直都是采用最原始的�
 PS：
 
 - css在线参考手册：[http://css.doyoe.com/](http://css.doyoe.com/)
-- 个人Gulp Bak：[https://github.com/imruxin/gulp](https://github.com/imruxin/gulp)
 
 其他资源：
 
